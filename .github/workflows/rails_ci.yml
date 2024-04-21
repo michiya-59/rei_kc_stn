@@ -35,14 +35,14 @@ jobs:
     runs-on: ubuntu-latest
     env:  # 環境変数を定義。データベースへの接続情報など。
       DB_USERNAME: postgres
-      DB_PASSWORD: blast_stn_knowledge_pass
+      DB_PASSWORD: rei_kc_stn_pass
       DB_HOST: localhost
     services:  # PostgreSQLのサービスを定義。テスト実行時に使用します。
       postgres:
         image: postgres:latest
         env:
           POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: blast_stn_knowledge_pass
+          POSTGRES_PASSWORD: rei_kc_stn_pass
         ports:
           - 5432:5432
     steps:

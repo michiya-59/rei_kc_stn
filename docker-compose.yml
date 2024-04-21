@@ -3,18 +3,18 @@ services:
   db:
     image: postgres
     environment:
-      POSTGRES_PASSWORD: blast_stn_knowledge_pass
+      POSTGRES_PASSWORD: rei_kc_stn_pass
     ports:
       - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
   web:
     build: .
-    command: sh -c "rm -f /blast_stn_knowledge/tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    command: sh -c "rm -f /rei_kc_stn/tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
     tty: true
     stdin_open: true
     volumes:
-      - .:/blast_stn_knowledge
+      - .:/rei_kc_stn
     ports:
       - "3000:3000"
     depends_on:
@@ -23,7 +23,7 @@ services:
     build: .
     command: bundle exec rails dartsass:watch
     volumes:
-      - .:/blast_stn_knowledge
+      - .:/rei_kc_stn
     depends_on:
       - web
 volumes:

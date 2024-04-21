@@ -225,13 +225,13 @@ class RewardsController < ApplicationController
       pdf.font "IPAex"
 
       # 会社情報
-      pdf.text "BLAST 細谷菜奈", align: :right, size: 14
+      pdf.text "麗 〜 Rei 〜 福士 眞心", align: :right, size: 14
       pdf.move_down 9
-      pdf.text "150-0044", align: :right, size: 14
+      pdf.text "104-0061", align: :right, size: 14
       pdf.move_down 2
-      pdf.text "東京都渋谷区円山町5番5号", align: :right, size: 14
+      pdf.text "東京都中央区銀座1丁目12番4号", align: :right, size: 14
       pdf.move_down 2
-      pdf.text "Navi渋谷V 3階", align: :right, size: 14
+      pdf.text "N&EBLD.6F", align: :right, size: 14
       pdf.move_down 38
 
       # タイトル

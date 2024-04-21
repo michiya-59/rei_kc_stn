@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-rm -f /blast_stn_knowledge/tmp/pids/server.pid
+rm -f /rei_kc_stn/tmp/pids/server.pid
 
 exec "$@"
 

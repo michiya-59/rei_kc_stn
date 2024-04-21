@@ -3,20 +3,20 @@ default: &default
   encoding: unicode
   host: db
   username: postgres
-  password: blast_stn_knowledge_pass
+  password: rei_kc_stn_pass
   pool: 5
 
 development:
   <<: *default
-  database: blast_stn_knowledge_development
+  database: rei_kc_stn_development
 
 test:
   <<: *default
-  database: blast_stn_knowledge_test
+  database: rei_kc_stn_test
 
 production:
   <<: *default
-  database: blast_stn_knowledge_production
-  username: <%= ENV["BLAST_STN_DATABASE_USER"] %>
-  host: <%= ENV["BLAST_STN_DATABASE_HOST"] %>
-  password: <%= ENV["BLAST_STN_DATABASE_PASSWORD"] %>
+  database: rei_kc_stn_production
+  username: <%= ENV["REI_KC_STN_DATABASE_USER"] %>
+  host: <%= ENV["REI_KC_STN_DATABASE_HOST"] %>
+  password: <%= ENV["REI_KC_STN_DATABASE_PASSWORD"] %>
