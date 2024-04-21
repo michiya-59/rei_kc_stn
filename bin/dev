@@ -6,6 +6,6 @@ if ! gem list foreman -i --silent; then
 fi
 
 # Railsのpidファイルを削除
-rm -f /blast_stn_knowledge/tmp/pids/server.pid
+rm -f /rei_kc_stn/tmp/pids/server.pid
 
 exec foreman start -f Procfile.dev "$@"

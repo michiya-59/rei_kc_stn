@@ -8,15 +8,15 @@ default: &default
 
 development:
   <<: *default
-  database: blast_stn_knowledge_development
+  database: rei_kc_stn_development
 
 test:
   <<: *default
-  database: blast_stn_knowledge_test
+  database: rei_kc_stn_test
 
 production:
   <<: *default
-  database: blast_stn_knowledge_production
+  database: rei_kc_stn_production
 
 
 

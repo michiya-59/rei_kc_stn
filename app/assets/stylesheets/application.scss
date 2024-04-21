@@ -5,6 +5,7 @@ $breakpoint: (
   sp_320: 'screen and (max-width: 320px)', // 320ピクセル以下のスマートフォン向けのスタイル
   sp_375: 'screen and (max-width: 375px)', // 375ピクセル以下のスマートフォン向けのスタイル
   sp_394: 'screen and (max-width: 394px)', // 375ピクセル以下のスマートフォン向けのスタイル
+  sp_414: 'screen and (max-width: 414px)', // 430ピクセル以下のスマートフォン向けのスタイル
   sp_430: 'screen and (max-width: 430px)', // 430ピクセル以下のスマートフォン向けのスタイル
   sp: 'screen and (max-width: 767px)', // 767ピクセル以下のスマートフォン向けのスタイル
   tab_820: 'screen and (max-width: 820px)', // 820ピクセル以下のスマートフォン向けのスタイル
@@ -479,6 +480,22 @@ main{
     img{
       height: 100%;
       object-fit: contain;
+      padding-right: 7rem;
+      @include responsive_media(tab){
+        padding-right: 19rem;
+      }
+      @include responsive_media(tab_820){
+        padding-right: 27rem;
+      }
+      @include responsive_media(sp){
+        padding-right: 12rem;
+      }
+      @include responsive_media(sp_375){
+        padding-right: 10rem;
+      }
+      @include responsive_media(sp_320){
+        padding-right: 7rem;
+      }
     }
   }
   .header_right{
@@ -2052,22 +2069,31 @@ main{
 
 // login
 .login_icon{
-  width: 50rem;
+  width: 24rem;
   margin: 0 auto;
-  margin-top: 10rem;
+  margin-top: 5rem;
   @include responsive_media(tab){
-    margin-top: 29rem;
+    width: 35rem;
+    margin-top: 25rem;
+  }
+  @include responsive_media(sp_430){
+    width: 35rem;
+    margin-top: 22rem;
+  }
+  @include responsive_media(sp_414){
+    width: 35rem;
+    margin-top: 21rem;
   }
   @include responsive_media(sp_394){
-    margin-top: 27.5rem;
+    margin-top: 23rem;
   }
   @include responsive_media(sp_375){
-    margin-top: 18rem;
-    width: 50rem;
+    margin-top: 11rem;
+    width: 35rem;
   }
   @include responsive_media(sp_320){
-    margin-top: 14rem;
-    width: 36rem;
+    margin-top: 10rem;
+    width: 28rem;
   }
 }
 .login_form{
