@@ -12,7 +12,7 @@ amazon:
   access_key_id:
   secret_access_key:
   region: ap-northeast-1
-  bucket: blast-stn-s3
+  bucket: rei-stn-s3
 
 # Remember not to checkin your GCS keyfile to a repository
 # google:
