@@ -25,12 +25,12 @@ learn_categories = [
   { name: "株式取引の学び", created_at: Time.current, updated_at: nil},
   { name: "保険の学び", created_at: Time.current, updated_at: nil},
   { name: "不動産の学び", created_at: Time.current, updated_at: nil},
-  { name: "NISAの学び", created_at: Time.current, updated_at: nil},
+  { name: "信用取引の学び", created_at: Time.current, updated_at: nil},
   { name: "為替取引", created_at: Time.current, updated_at: nil}
 ]
 
 # # 会員のマスターデータ
-# users = [
+users = [
 #   # id: 1 細谷菜奈
 #   { login_id: "nanarapunzel0121", email: "nanarapunzel.0121@gmail.com", name: "細谷菜奈", password: "Nana0121!", password_confirmation: "Nana0121!", name_kana: "ホソヤナナ", birthday: Date.new(1990, 1, 21), phone: "08093891466", status: 1, introducer_id: 99999, admin_flg: 1, gender_id: 2, online_flg: 9, grade_id: 2, created_at: "2023-02-23 00:00:00", updated_at: nil, incentive_id: 2 },
 #   # id: 2 篠本拓海
@@ -123,8 +123,8 @@ learn_categories = [
 #   { login_id: "23108054", email: "kosha2380@gmail.com", name: "山越迪斗", password: "Kosha5423!?", password_confirmation: "Kosha5423!?", name_kana: "ヤマコシフミト", birthday: Date.new(1990, 8, 22), phone: "08042300822", status: 1, introducer_id: 15, admin_flg: 9, gender_id: 1, online_flg: 9, grade_id: 99, created_at: "2023-06-06 00:00:00", updated_at: nil, incentive_id: 2 },
 #   # id: 47 佐野俊介
 #   { login_id: "unknown0029", email: "unknown29@gmail.com", name: "佐野俊介", password: "Unknown!?", password_confirmation: "Unknown!?", name_kana: "サノシュンスケ", birthday: Date.new(1990, 1, 1), phone: "11100001111", status: 9, introducer_id: 16, admin_flg: 9, gender_id: 1, online_flg: 9, grade_id: 99, created_at: "2023-10-12 00:00:00", updated_at: nil, incentive_id: 2 },
-#   # id: 48 日比悠斗
-#   { login_id: "hibiyuto", email: "hibi.yuto@icloud.com", name: "日比悠斗", password: "1997Yuto!?", password_confirmation: "1997Yuto!?", name_kana: "ヒビユウト", birthday: Date.new(1997, 12, 3), phone: "08090545583", status: 1, introducer_id: 16, admin_flg: 9, gender_id: 1, online_flg: 9, grade_id: 1, created_at: "2023-02-25 00:00:00", updated_at: nil, incentive_id: 2 },
+# id: 1 日比悠斗
+{ login_id: "hibiyuto", email: "hibi.yuto@icloud.com", name: "日比悠斗", password: "1997Yuto!?", password_confirmation: "1997Yuto!?", name_kana: "ヒビユウト", birthday: Date.new(1997, 12, 3), phone: "08090545583", status: 1, introducer_id: 99999, admin_flg: 9, gender_id: 1, online_flg: 9, grade_id: 1, created_at: "2024-07-02 00:00:00", updated_at: nil, incentive_id: 2 }
 #   # id: 49 田邉諒多
 #   { login_id: "Gekyouenrai", email: "r123gekyou@gmail.com", name: "田邉諒多", password: "T0ntink@n", password_confirmation: "T0ntink@n", name_kana: "タナベリョウタ", birthday: Date.new(2001, 12, 23), phone: "08055602646", status: 1, introducer_id: 17, admin_flg: 9, gender_id: 1, online_flg: 99, grade_id: 99, created_at: "2023-08-24 00:00:00", updated_at: nil, incentive_id: 2 },
 #   # id: 50 後藤愛佳
@@ -203,7 +203,7 @@ learn_categories = [
 #   { login_id: "Makomako884", email: "mako-884@ezweb.ne.jp", name: "林丹乙", password: "Makoto0321!?", password_confirmation: "Makoto0321!?", name_kana: "ハヤシマコト", birthday: Date.new(2000, 3, 21), phone: "09081659906", status: 1, introducer_id: 84, admin_flg: 9, gender_id: 2, online_flg: 9, grade_id: 99, created_at: "2023-06-20 00:00:00", updated_at: nil, incentive_id: 2 },
 #   # id: 87 河路くるみ
 #   { login_id: "0823", email: "k.tennis0823@gmail.com", name: "河路くるみ", password: "K_u2327ru!?", password_confirmation: "K_u2327ru!?", name_kana: "カワジクルミ", birthday: Date.new(2003, 8, 23), phone: "08082575549", status: 1, introducer_id: 84, admin_flg: 9, gender_id: 2, online_flg: 9, grade_id: 99, created_at: "2023-02-23 00:00:00", updated_at: nil, incentive_id: 2 }
-# ]
+]
 
 # relation_ships = [
 #   {parent_id: 1, child_id: 2, created_at: Time.current, updated_at: nil},
@@ -294,7 +294,7 @@ learn_categories = [
 #   {parent_id: 84, child_id: 87, created_at: Time.current, updated_at: nil}
 # ]
 
-# user_addresses = [
+user_addresses = [
 #   # id: 1 鈴木晴也
 #   { user_id: 1, zip_str3: "108", zip_str4: "0075", ken: "東京都", city: "港区港南4-6-5-3404", other_address: nil },
 #   # id: 2 篠本拓海
@@ -389,8 +389,8 @@ learn_categories = [
 #   { user_id: 46, zip_str3: "132", zip_str4: "0033", ken: "東京都", city: "江戸川区東小松川2-32-16", other_address: "ラテル太田102" },
 #   # id: 47 佐野俊介
 #   { user_id: 47, zip_str3: "000", zip_str4: "1111", ken: "東京都", city: "新宿区市谷薬王寺町", other_address: nil },
-#   # id: 48 日比悠斗
-#   { user_id: 48, zip_str3: "188", zip_str4: "0013", ken: "東京都", city: "西東京市向台町4-10-30", other_address: "ツインオークス 201" },
+  # id: 48 日比悠斗
+  { user_id: 1, zip_str3: "188", zip_str4: "0013", ken: "東京都", city: "西東京市向台町4-10-30", other_address: "ツインオークス 201" }
 #   # id: 49 田邉諒多
 #   { user_id: 49, zip_str3: "259", zip_str4: "1117", ken: "神奈川県", city: "伊勢原市東成瀬42-1", other_address: "ヘルフラワーハイツ伊勢原315号" },
 #   # id: 50 後藤愛佳
@@ -469,9 +469,9 @@ learn_categories = [
 #   { user_id: 86, zip_str3: "472", zip_str4: "0007", ken: "愛知県", city: "知立市牛田町前田7-3", other_address: "A.CITY牛田215" },
 #   # id: 87 河路くるみ
 #   { user_id: 87, zip_str3: "492", zip_str4: "8229", ken: "愛知県", city: "稲沢市稲島8-87-1", other_address: "ティアラC106" }
-# ]
+]
 
-# user_banks = [
+user_banks = [
 #   # id: 1 鈴木晴也
 #   { user_id: 1, bank_name: "三菱UFJ銀行", account_type: 1, branch_name: "横浜駅前支店", branch_number: "251", account_number_hash: "2138328", account_number_tail: "*****328", account_holder: "SUZUKI SEIYA" },
 #   # id: 2 篠本拓海
@@ -567,7 +567,7 @@ learn_categories = [
 #   # id: 47 佐野俊介
 #   { user_id: 47, bank_name: "不明", account_type: 1, branch_name: "不明", branch_number: "000", account_number_hash: "1110000", account_number_tail: "*****000", account_holder: "SANO SYUNSUKE" },
 #   # id: 48 日比悠斗
-#   { user_id: 48, bank_name: "三井住友銀行", account_type: 1, branch_name: "清瀬支店", branch_number: "849", account_number_hash: "4883598", account_number_tail: "*****598", account_holder: "HIBI YUTO" },
+    { user_id: 1, bank_name: "三井住友銀行", account_type: 1, branch_name: "清瀬支店", branch_number: "849", account_number_hash: "4883598", account_number_tail: "*****598", account_holder: "HIBI YUTO" }
 #   # id: 49 田邉諒多
 #   { user_id: 49, bank_name: "auじぶん銀行", account_type: 1, branch_name: "かわ支店", branch_number: "112", account_number_hash: "0639050", account_number_tail: "*****050", account_holder: "TANABE RYOTA" },
 #   # id: 50 後藤愛佳
@@ -646,7 +646,7 @@ learn_categories = [
 #   { user_id: 86, bank_name: "三井住友銀行", account_type: 1, branch_name: "加古川支店", branch_number: "431", account_number_hash: "5931412", account_number_tail: "*****412", account_holder: "HAYASHI MAKOTO" },
 #   # id: 87 河路くるみ
 #   { user_id: 87, bank_name: "ゆうちょ銀行", account_type: 1, branch_name: "二〇八", branch_number: "208", account_number_hash: "1259103", account_number_tail: "*****103", account_holder: "KAWAJI KURUMI" }
-# ]
+]
 
 # rewards = [
 #   user_id: 44, incentive_id: 2, incentive_price: nil,
@@ -665,8 +665,8 @@ learn_categories = [
 Incentive.create!(incentives)
 LearnCategory.create!(learn_categories)
 Grade.create!(grades)
-# User.create!(users)
-# UserAddress.create!(user_addresses)
-# UserBank.create!(user_banks)
+User.create!(users)
+UserAddress.create!(user_addresses)
+UserBank.create!(user_banks)
 # Relationship.create!(relation_ships)
 # Reward.create!(rewards)
