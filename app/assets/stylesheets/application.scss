@@ -2069,7 +2069,7 @@ main{
 
 // login
 .login_icon{
-  width: 24rem;
+  width: 20rem;
   margin: 0 auto;
   margin-top: 5rem;
   @include responsive_media(tab){
@@ -2081,7 +2081,7 @@ main{
     margin-top: 22rem;
   }
   @include responsive_media(sp_414){
-    width: 35rem;
+    width: 32rem;
     margin-top: 21rem;
   }
   @include responsive_media(sp_394){
@@ -2089,11 +2089,11 @@ main{
   }
   @include responsive_media(sp_375){
     margin-top: 11rem;
-    width: 35rem;
+    width: 23rem;
   }
   @include responsive_media(sp_320){
     margin-top: 10rem;
-    width: 28rem;
+    width: 23rem;
   }
 }
 .login_form{
