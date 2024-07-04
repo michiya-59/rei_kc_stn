@@ -225,13 +225,11 @@ class RewardsController < ApplicationController
       pdf.font "IPAex"
 
       # 会社情報
-      pdf.text "麗 〜 Rei 〜 福士 眞心", align: :right, size: 14
+      pdf.text "HOPE 日比 悠斗", align: :right, size: 14
       pdf.move_down 9
-      pdf.text "104-0061", align: :right, size: 14
+      pdf.text "188-0013", align: :right, size: 14
       pdf.move_down 2
-      pdf.text "東京都中央区銀座1丁目12番4号", align: :right, size: 14
-      pdf.move_down 2
-      pdf.text "N&EBLD.6F", align: :right, size: 14
+      pdf.text "東京都西東京市向台町4-10-30", align: :right, size: 14
       pdf.move_down 38
 
       # タイトル
