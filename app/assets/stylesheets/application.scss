@@ -2078,22 +2078,22 @@ main{
   }
   @include responsive_media(sp_430){
     width: 35rem;
-    margin-top: 22rem;
+    margin-top: 15rem;
   }
   @include responsive_media(sp_414){
     width: 32rem;
-    margin-top: 21rem;
+    margin-top: 20rem;
   }
   @include responsive_media(sp_394){
-    margin-top: 23rem;
+    margin-top: 20rem;
   }
   @include responsive_media(sp_375){
     margin-top: 11rem;
-    width: 23rem;
+    width: 20rem;
   }
   @include responsive_media(sp_320){
     margin-top: 10rem;
-    width: 23rem;
+    width: 20rem;
   }
 }
 .login_form{
