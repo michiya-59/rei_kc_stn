@@ -12,7 +12,6 @@ class Reward < ApplicationRecord
       return unless user&.introducer_id.present? && user&.incentive_id.present?
 
       create_incentive_rewards user, approval
-      
     end
 
     private
@@ -40,9 +39,9 @@ class Reward < ApplicationRecord
       create_two_tier_bonus(user.introducer_id)
     end
 
-    # 紹介者の「ノーマルコース」または「アドバンスコース」の登録処理
+    # 紹介者の「スタートアップコース」または「アドバンスコース」の登録処理
     # params[User] user Userモデルからidを取り出すためのオブジェクト
-    # params[Integer] incentive 報酬コースのID（:normal：ノーマルコース, advance：アドバンスコース）
+    # params[Integer] incentive 報酬コースのID（:normal：スタートアップコース, advance：アドバンスコース）
     def create_reward_for_user introducer_id, incentive
       create!(
         user_id: introducer_id,

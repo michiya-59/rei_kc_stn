@@ -53,11 +53,11 @@ module ApplicationHelper
   def get_course_name course_id
     case course_id.to_i
     when 1
-      "ノーマルコース"
+      "スタートアップコース"
     when 2
-      "デラックスコース"
+      "ベーシックコース"
     when 3
-      "ラグジュアリーコース"
+      "エグゼクティブコース"
     end
   end
 end

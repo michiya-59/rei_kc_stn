@@ -2,13 +2,13 @@
 
 # 報酬の種別及び金額情報のマスターデータ
 incentives = [
-  { course_type: "normal", course_name: "ノーマルコース（2ヶ月）", incentive_price: 35000, created_at: Time.current },
-  { course_type: "deluxe", course_name: "デラックスコース（6ヶ月）", incentive_price: 70000, created_at: Time.current },
-  { course_type: "luxury", course_name: "ラグジュアリーコース（12ヶ月）", incentive_price: 100000, created_at: Time.current },
+  { course_type: "normal", course_name: "スタートアップコース（2ヶ月）", incentive_price: 35000, created_at: Time.current },
+  { course_type: "deluxe", course_name: "ベーシックコース（6ヶ月）", incentive_price: 70000, created_at: Time.current },
+  { course_type: "luxury", course_name: "エグゼクティブコース（12ヶ月）", incentive_price: 100000, created_at: Time.current },
   { course_type: "two_tier", course_name: "2ティア", incentive_price: 40000, created_at: Time.current },
-  { course_type: "normal_incentive", course_name: "ノーマルコース（インセンティブ）", incentive_price: 20000, created_at: Time.current },
-  { course_type: "deluxe_incentive", course_name: "デラックスコース（インセンティブ）", incentive_price: 30000, created_at: Time.current },
-  { course_type: "luxury_incentive", course_name: "ラグジュアリーコース（インセンティブ）", incentive_price: 70000, created_at: Time.current }
+  { course_type: "normal_incentive", course_name: "スタートアップコース（インセンティブ）", incentive_price: 20000, created_at: Time.current },
+  { course_type: "deluxe_incentive", course_name: "ベーシックコース（インセンティブ）", incentive_price: 30000, created_at: Time.current },
+  { course_type: "luxury_incentive", course_name: "エグゼクティブコース（インセンティブ）", incentive_price: 70000, created_at: Time.current }
 ]
 
 # グレードのマスターデータ

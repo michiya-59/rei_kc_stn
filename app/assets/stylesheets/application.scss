@@ -732,7 +732,7 @@ main{
   }
 }
 
-// セミナー予約画面
+// 講義予約画面
 .pankuzu{
   margin: 1.6rem 0;
   color: $black;
@@ -3077,6 +3077,7 @@ main{
   }
 }
 
+// 利用規約
 .term_title{
   margin: 5rem 0 0 0;
   text-align: center;
@@ -3085,6 +3086,16 @@ main{
     margin: 1rem 0;
     font-weight: normal;
     font-size: 1.6rem;
+  }
+}
+.term_red{
+  color: red;
+}
+.term_padding{
+  padding-left: 8rem;
+  margin: 3rem auto;
+  @include responsive_media(sp){
+    padding-left: 0;
   }
 }
 

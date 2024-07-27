@@ -1,6 +1,6 @@
 <p class="pankuzu">
   <%= link_to 'トップページ', root_path, class: 'common_a' %> >
-  <%= link_to 'セミナー予約', reservations_path, class: 'common_a' %> >
+  <%= link_to '講義予約', reservations_path, class: 'common_a' %> >
   予約状況一覧
 </p>
 <div class="common_field_title">
@@ -60,7 +60,7 @@
       </div>
     <% end %>
   <% else %>
-    <p class="mb-3"><%= "#{@search_year}/#{@search_month}に予約しているセミナーはありません。"%></p>
+    <p class="mb-3"><%= "#{@search_year}/#{@search_month}に予約している講義はありません。"%></p>
   <% end %>
   
   <% if session[:search_seminars_year].present? && session[:search_seminars_month].present? %>
